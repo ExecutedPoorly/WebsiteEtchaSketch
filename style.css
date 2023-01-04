@@ -1,0 +1,55 @@
+:root {
+  --grid-cols: 10;
+  --grid-rows: 10;
+}
+header {
+  color: black;
+  background-color: #252c5c;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.ChangeGridSize.btn.btn-info.btn-sm{
+  font-size: 9px;
+  font-weight: bold;
+}
+/*button {
+  
+  color: black;
+  font-size: 15px;
+  line-height: 15px;
+  padding: 7px;
+  border-radius: 13px;
+  font-family: Georgia, serif;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  background-image: linear-gradient(
+    to right,
+    rgb(208, 208, 208) 0%,
+    rgb(208, 208, 208) 100%
+  );
+  box-shadow: rgba(0, 0, 0, 0) 5px 5px 11px 10px;
+  border: 2px solid rgb(28, 110, 164);
+  display: inline-block;
+}*/
+
+.ContainerEtch {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  
+}
+.etchasektch {
+  border: 3px solid #1c6ea4;
+  display: inline-grid;
+  grid-template-rows: repeat(var(--grid-cols), 1fr);
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+  background-color: white;
+  /* grid-template-columns: repeat(var(10)), 1fr; */
+  /* grid-gap: 1em; */
+}
+body {
+  background: #4a7b87;
+}
